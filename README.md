@@ -1,2 +1,0 @@
-# women_graphic
-# womengraphic
