@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maternal Deaths</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400|Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/styl.css">
+
+
+<html>
+
+<head>
+    <title>The causes of maternal deaths in Malawi</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+
+        $(document).ready(function(){
+
+        $('.showSingle').click(function(){
+              $('.targetImg').hide();
+              $('#div'+$(this).attr('target')).show();
+        });
+
+        $('.showSingle').click(function(){
+            $(".targetImg_mobile").hide();
+            $("#mobile_div"+$(this).attr("target")).show();
+        });
+
+        $("#hidden").click(function(){
+          $("#hidden_text").show();
+          $("#hidden").hide();
+        });
+
+        $("#hide").click(function(){
+          $("#hidden_text").hide();
+          $("#hidden").show();
+        });
+
+
+});
+
+</script>
+</head>
+
+</head>
+<body>
+  <div class="container">
+    <h1>The causes of maternal deaths in Malawi</h1>
+    <p>
+      <span style="font-family: 'Montserrat';">DEVELOPER</span> | <span style="color: #386f7f;">Hrisanthi Kroi</span><br>
+      <span style="font-family: 'Montserrat';">DESIGNER</span> | <span style="color: #386f7f;">Gentry Sanders</span>
+    </p>
+    <div class="text">
+
+        <p>Since 2009, various programs have saved the lives of more than two-thirds of children who would have died
+        without them. Only about 7 percent of child births resulted in deaths in 2014, on mark to reach 6 percent in
+        2015. However, Malawi is off-mark to meet its goal of reducing maternal mortality.
+        </p>
+        <button id="hidden">Read More</button></br>
+        <div id="hidden_text" style="display: none">
+        <p>In 2004, an average of 984 pregnant mothers died per 100,000 live births. In 2013, the maternal mortality
+        rate in Malawi was half that, yet still far off-mark for the U.N. Millennium goal of 155 per 100,000 live births.
+        </p>
+        <p>The main causes of maternal death are complications with severe bleeding, abortion complications, pregnancy-
+        induced high blood pressure, infection, obstructed labor and blood clots. Preexisting conditions also accounted
+        for a quarter of all maternal deaths. These deaths indicate conditions of poverty and malnutrition, two important
+        aspects to a healthy pregnancy.
+        </p>
+        <p>The figures below each represent women and mothers in Malawi who have died due to complications with pregnancy
+        or birth in 2013. Use the buttons to view the breakdown of these causes of death.</p>
+        <button id="hide">Read Less</button>
+      </div>
+    </div>
+    <!--  DESKTOP NAV  -->
+    <div class="visible-md visible-lg">
+      <div class="row">
+        <div class="col-md-3 col-xs-4"><button target="1" class="showSingle">All</button></div>
+        <div class="col-md-3 col-xs-4"><button target="2" class="showSingle">Preexisting</button></div>
+        <div class="col-md-3 col-xs-4"><button target="3" class="showSingle">Bloodclot</button></div>
+        <div class="col-md-3 col-xs-4"><button target="4" class="showSingle">High Blood Presure</button></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xs-4"><button target="5" class="showSingle">Infection</button></div>
+        <div class="col-md-3 col-xs-4"><button target="6" class="showSingle">Abortion</button></div>
+        <div class="col-md-3 col-xs-4"><button target="7" class="showSingle">Bleeding</button></div>
+        <div class="col-md-3 col-xs-4"><button target="8" class="showSingle">Obstruction</button></div>
+      </div>
+    </div>
+
+    <!--MOBILE NAV -->
+    <div class="mobile-nav visible-xs visible-sm">
+      <div class="row">
+        <div class="col-xs-6"><button target="1" class="showSingle">All</button></div>
+        <div class="col-xs-6"><button target="2" class="showSingle">Preexisting: 28%</button></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6"><button target="3" class="showSingle">Bloodclot: 3%</button></div>
+        <div class="col-xs-6"><button target="4" class="showSingle">High Blood Presure: 14%</button></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6"><button target="5" class="showSingle">Infection: 11%</button></div>
+        <div class="col-xs-6"><button target="6" class="showSingle">Abortion: 8%</button></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6"><button target="7" class="showSingle">Bleeding: 27%</button></div>
+        <div class="col-xs-6"><button target="8" class="showSingle">Obstruction: 9%</button></div>
+      </div>
+    </div>
+
+
+      <div class="images hidden-xs visible-xl">
+        <img id="div1" class="targetImg" src="images/all.png">
+        <img id="div2" class="targetImg" src="images/preexisting.png" style="display: none">
+        <img id="div3"  class="targetImg" src="images/bloodclot.png" style="display: none">
+        <img id="div4" class="targetImg" src="images/highbloodpressure.png" style="display: none">
+        <img id="div5"  class="targetImg"src="images/infection.png" style="display: none">
+        <img id="div6" class="targetImg" src="images/abortion.png" style="display: none">
+        <img id="div7" class="targetImg" src="images/severebleeding.png" style="display: none">
+        <img id="div8" class="targetImg" src="images/obstructed.png" style="display: none">
+      </div>
+
+      <div class="images_mobile visible-xs hidden-xl">
+        <img id="mobile_div1" class="targetImg_mobile" src="images/all_mobile.png">
+        <img id="mobile_div2" class="targetImg_mobile" src="images/pre_existing_mobile.png" style="display: none">
+        <img id="mobile_div3" class="targetImg_mobile" src="images/bloodclot_mobil.png" style="display: none">
+        <img id="mobile_div4" class="targetImg_mobile" src="images/highbloodpressure_mobile.png" style="display: none">
+        <img id="mobile_div5" class="targetImg_mobile" src="images/infection_mobile.png" style="display: none">
+        <img id="mobile_div6" class="targetImg_mobile" src="images/abortion_mobile.png" style="display: none">
+        <img id="mobile_div7" class="targetImg_mobile" src="images/severbleeding_mobile.png" style="display: none">
+        <img id="mobile_div8" class="targetImg_mobile" src="images/obstruct_mobile.png" style="display: none">
+      </div>
+    </div>
+    <div id="clarification" class="credit">
+      <p class="blurb">Each figure of a woman represents 2890 women who have died from maternal health issues in
+        2014. Colors represent the various causes of death.
+      </p>
+      <p>
+        <span style="font-family: 'Montserrat';">SOURCE</span> | <span style="color: #386f7f;">UNICEF country statistics, Malawi</span>
+      </p>
+    </div>
+  </div>
+</body>
+
+
+</html>
